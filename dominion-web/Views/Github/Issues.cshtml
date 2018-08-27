@@ -1,0 +1,14 @@
+@model System.Collections.Generic.IReadOnlyList<Octokit.Issue>
+
+<h1>Issues list for @ViewBag.owner / @ViewBag.repoName</h1>
+
+<div class="row">
+    <div class="col-md-12">
+        @{
+            foreach(var issue in Model){
+                <h4>@issue.Title</h4>
+            }
+        }
+    </div>
+</div>
+

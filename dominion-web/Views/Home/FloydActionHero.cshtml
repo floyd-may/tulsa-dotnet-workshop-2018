@@ -1,0 +1,7 @@
+﻿@model Repository
+
+<h1>@Model.Name</h1>
+
+@{ foreach(var file in Model.Files){
+    <h2>@file</h2>
+}}
